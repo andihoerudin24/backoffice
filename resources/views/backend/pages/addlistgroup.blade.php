@@ -78,7 +78,7 @@
                                 console.log(item)
                                 return {
                                     id: `${item.id}`,
-                                    text: item.nama
+                                    text: item.nama + ' - ' + item.id
                                 };
                             })
                         };

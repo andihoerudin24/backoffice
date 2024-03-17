@@ -53,6 +53,7 @@ class ListGroupController extends Controller
     public function search(Request $request) {
         $searchTerm = $request->term;
         $results = Company::where('id', 'like', "%$searchTerm%")
+        ->orwhere('nama','like',"%$searchTerm%")
         ->limit(10)
         ->get();
         return response()->json($results);
