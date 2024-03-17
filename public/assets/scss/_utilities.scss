@@ -1,0 +1,50 @@
+:root {
+    --bg-color: #333;
+    --font-color: #fff;
+    --color-alt: #BF2026;
+    --red: #C72026;
+    --deep-black: #191919;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--deep-black);
+}
+.ratio > img {
+    object-fit: cover;
+}
+.container {
+    max-width: 1054px;
+}
+.container-fluid {
+    max-width: 1440px;
+}
+.bg-dark {
+    background-color: #000 !important;
+}
+
+[style*="--aspect-ratio"] > :first-child {
+    width: 100%;
+  }
+  [style*="--aspect-ratio"] > img {
+    height: auto;
+  }
+  @supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+      position: relative;
+    }
+    [style*="--aspect-ratio"]::before {
+      content: "";
+      display: block;
+      padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+    [style*="--aspect-ratio"] > :first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+}
+
+.bottom-15 {
+    bottom: 15%;
+}
