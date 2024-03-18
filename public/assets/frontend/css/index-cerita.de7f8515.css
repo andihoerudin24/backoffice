@@ -1,0 +1,1 @@
+.box-syarat{display:flex}.syarat-image{width:30%;position:absolute;right:0;top:0}.syarat-left{width:70%}.padding-syarat{padding:2rem}@media only screen and (max-width: 767px){.box-syarat{display:block;max-width:90%;margin:0 auto}.syarat-image{width:100%;position:relative}.syarat-left{width:100%}.padding-syarat{padding:32px 32px 0}}
